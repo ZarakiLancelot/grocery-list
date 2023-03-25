@@ -33,7 +33,7 @@ const GroceryFrom = ({ addItem }) => {
         <label
           htmlFor="item"
           className="label"
-        >Item</label>
+        >Add item...</label>
       </div>
       <button
         className="btn"
