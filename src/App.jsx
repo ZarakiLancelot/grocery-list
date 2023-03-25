@@ -2,12 +2,13 @@ import { useState } from 'react'
 
 // Custom Components
 import GroceryFrom from './components/GroceryForm'
+import ItemList from './components/ItemList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [items, setItems] = useState([]);
 
   const addItem = (item) => {
-    console.log(item)
+    setItems(prevState => [...prevState, item]);
   }
 
   return (
@@ -16,6 +17,7 @@ function App() {
         <h1>Grocery List</h1>
       </header>
       <GroceryFrom addItem={addItem} />
+      { items && <ItemList items={items}/>}
     </div>
   )
 }
