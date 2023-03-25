@@ -1,11 +1,15 @@
 import { useState } from 'react'
 
 // Custom Components
-import GroceryFrom from './components/GroceryForm'
+import GroceryFrom from './components/GroceryForm';
+import EditForm from './components/EditForm';
 import ItemList from './components/ItemList';
 
 function App() {
   const [items, setItems] = useState([]);
+  const [editedItem, setEditedItem] = useState(null);
+  const [isEditing,setIsEditing] = useState(false);
+  const [focusPrevElement, setFocusPrevElement] = useState();
 
   const addItem = (item) => {
     setItems(prevState => [...prevState, item]);
@@ -21,17 +25,46 @@ function App() {
     )));
   }
 
+  const closeEditMode = () => {
+    setEditedItem(null);
+    setIsEditing(false);
+    focusPrevElement.focus();
+  }
+
+  const updateItem = (item) => {
+    setItems(prevState => prevState.map(i => (
+      i.id === item.id ? { ...i, name: item.name } : i
+    )));
+    closeEditMode();
+  }
+
+  const enterEditMode = (item) => {
+    setEditedItem(item);
+    setIsEditing(true);
+    setFocusPrevElement(document.activeElement);
+  }
+
   return (
     <div className="container">
       <header>
         <h1>Grocery List</h1>
       </header>
+      {
+        isEditing && (
+          <EditForm
+            editedItem={editedItem}
+            updateItem={updateItem}
+            closeEditMode={closeEditMode}
+          />
+        )
+      }
       <GroceryFrom addItem={addItem} />
       { items && (
         <ItemList
           items={items}
           deleteItem={deleteItem}
           toggleCheckItem={toggleCheckItem}
+          enterEditMode={enterEditMode}
         />
       )}
     </div>

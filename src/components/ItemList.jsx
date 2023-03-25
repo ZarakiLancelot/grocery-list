@@ -3,7 +3,7 @@ import ItemIndividual from "./ItemIndividual";
 // Styles
 import styles from "./ItemList.module.css";
 
-const ItemList = ({items, deleteItem, toggleCheckItem }) => {
+const ItemList = ({items, deleteItem, toggleCheckItem, enterEditMode }) => {
   return (
     <ul className={styles.items}>
       {
@@ -13,6 +13,7 @@ const ItemList = ({items, deleteItem, toggleCheckItem }) => {
             item={item}
             deleteItem={deleteItem}
             toggleCheckItem={toggleCheckItem}
+            enterEditMode={enterEditMode}
           />
         ))
       }

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from './ItemList.module.css';
 import { CheckIcon, TrashIcon, PencilIcon } from '@heroicons/react/24/solid';
 
-const ItemIndividual = ({ item, deleteItem, toggleCheckItem }) => {
+const ItemIndividual = ({ item, deleteItem, toggleCheckItem, enterEditMode }) => {
   const [isChecked, setIsChecked] = useState(item.checked);
 
   const handleCheckboxChange = (e) => {
@@ -37,7 +37,7 @@ const ItemIndividual = ({ item, deleteItem, toggleCheckItem }) => {
         <button
           className="btn"
           aria-label={`Update ${item.name} item`}
-          // onClick={}          
+          onClick={() => enterEditMode(item)}
         >
           <PencilIcon width={24} height={24} />
         </button>
