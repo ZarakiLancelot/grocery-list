@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from './ItemList.module.css';
 import { CheckIcon, TrashIcon, PencilIcon } from '@heroicons/react/24/solid';
 
-const ItemIndividual = ({item}) => {
+const ItemIndividual = ({ item, deleteItem }) => {
   const [isChecked, setIsChecked] = useState(item.checked);
 
   const handleCheckboxChange = (e) => {
@@ -32,18 +32,20 @@ const ItemIndividual = ({item}) => {
         </label>
       </div>
       <div className={styles["item-group"]}>
+        {/* UPDATE */}
         <button
           className="btn"
           aria-label={`Update ${item.name} item`}
-          // onClick={}
+          // onClick={}          
         >
           <PencilIcon width={24} height={24} />
         </button>
 
+        {/* DELETE */}
         <button
           className={`btn ${styles.delete}`}
           aria-label={`Delete ${item.name} item`}
-          // onClick={}
+          onClick={() => deleteItem(item.id)}
         >
           <TrashIcon width={24} height={24} />
         </button>

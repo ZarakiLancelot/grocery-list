@@ -3,7 +3,7 @@ import ItemIndividual from "./ItemIndividual";
 // Styles
 import styles from "./ItemList.module.css";
 
-const ItemList = ({items}) => {
+const ItemList = ({items, deleteItem }) => {
   return (
     <ul className={styles.items}>
       {
@@ -11,6 +11,7 @@ const ItemList = ({items}) => {
           <ItemIndividual
             key={item.id}
             item={item}
+            deleteItem={deleteItem}
           />
         ))
       }

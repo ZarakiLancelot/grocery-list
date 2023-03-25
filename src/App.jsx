@@ -11,13 +11,22 @@ function App() {
     setItems(prevState => [...prevState, item]);
   }
 
+  const deleteItem = (id) => {
+    setItems(prevState => prevState.filter(item => item.id !== id));
+  }
+
   return (
     <div className="container">
       <header>
         <h1>Grocery List</h1>
       </header>
       <GroceryFrom addItem={addItem} />
-      { items && <ItemList items={items}/>}
+      { items && (
+        <ItemList
+          items={items}
+          deleteItem={deleteItem}
+        />
+      )}
     </div>
   )
 }
