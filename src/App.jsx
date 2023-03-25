@@ -4,6 +4,7 @@ import { useState } from 'react'
 import GroceryFrom from './components/GroceryForm';
 import EditForm from './components/EditForm';
 import ItemList from './components/ItemList';
+import SwitchTheme from './components/SwitchTheme';
 
 // Custom Hooks
 import useLocalStorage from './hooks/useLocalStorage';
@@ -70,6 +71,7 @@ function App() {
           enterEditMode={enterEditMode}
         />
       )}
+      <SwitchTheme />
     </div>
   )
 }
