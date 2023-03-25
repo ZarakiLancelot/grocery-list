@@ -15,6 +15,12 @@ function App() {
     setItems(prevState => prevState.filter(item => item.id !== id));
   }
 
+  const toggleCheckItem = (id) => {
+    setItems(prevState => prevState.map(item => (
+      item.id === id ? { ...item, checked: !item.checked } : item
+    )));
+  }
+
   return (
     <div className="container">
       <header>
@@ -25,6 +31,7 @@ function App() {
         <ItemList
           items={items}
           deleteItem={deleteItem}
+          toggleCheckItem={toggleCheckItem}
         />
       )}
     </div>

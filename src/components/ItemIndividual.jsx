@@ -3,11 +3,12 @@ import { useState } from 'react';
 import styles from './ItemList.module.css';
 import { CheckIcon, TrashIcon, PencilIcon } from '@heroicons/react/24/solid';
 
-const ItemIndividual = ({ item, deleteItem }) => {
+const ItemIndividual = ({ item, deleteItem, toggleCheckItem }) => {
   const [isChecked, setIsChecked] = useState(item.checked);
 
   const handleCheckboxChange = (e) => {
     setIsChecked(!isChecked);
+    toggleCheckItem(item.id);
   }
 
   return (
