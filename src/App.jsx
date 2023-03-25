@@ -5,11 +5,14 @@ import GroceryFrom from './components/GroceryForm';
 import EditForm from './components/EditForm';
 import ItemList from './components/ItemList';
 
+// Custom Hooks
+import useLocalStorage from './hooks/useLocalStorage';
+
 function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useLocalStorage('grocery-list', []);
+  const [focusPrevElement, setFocusPrevElement] = useState();
   const [editedItem, setEditedItem] = useState(null);
   const [isEditing,setIsEditing] = useState(false);
-  const [focusPrevElement, setFocusPrevElement] = useState();
 
   const addItem = (item) => {
     setItems(prevState => [...prevState, item]);
