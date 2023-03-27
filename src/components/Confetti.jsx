@@ -23,7 +23,7 @@ const Confetti = () => {
         tweenDuration={1000}
         recycle={false}
         numberOfPieces={500}
-        gravity={0.2}
+        gravity={0.1}
       />
     </>
   )
