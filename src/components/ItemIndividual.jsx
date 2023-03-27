@@ -2,13 +2,16 @@ import { useState } from 'react';
 
 import styles from './ItemList.module.css';
 import { CheckIcon, TrashIcon, PencilIcon } from '@heroicons/react/24/solid';
+import Confetti from './Confetti';
 
 const ItemIndividual = ({ item, deleteItem, toggleCheckItem, enterEditMode }) => {
   const [isChecked, setIsChecked] = useState(item.checked);
+  const [isExploding, setIsExploding] = useState(false);
 
   const handleCheckboxChange = (e) => {
     setIsChecked(!isChecked);
     toggleCheckItem(item.id);
+    setIsExploding(!isExploding);      
   }
 
   return (
@@ -31,6 +34,13 @@ const ItemIndividual = ({ item, deleteItem, toggleCheckItem, enterEditMode }) =>
             <CheckIcon strokeWidth={2} width={24} height={24} />
           </p>
         </label>
+        {
+          isExploding && (
+            <Confetti
+              isExploding={isExploding}
+            />
+          )
+        }
       </div>
       <div className={styles["item-group"]}>
         {/* UPDATE */}
