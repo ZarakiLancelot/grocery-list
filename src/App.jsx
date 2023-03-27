@@ -8,6 +8,7 @@ import SwitchTheme from './components/SwitchTheme';
 
 // Custom Hooks
 import useLocalStorage from './hooks/useLocalStorage';
+import SocialMedia from './components/SocialMedia';
 
 function App() {
   const [items, setItems] = useLocalStorage('grocery-list', []);
@@ -72,6 +73,8 @@ function App() {
         />
       )}
       <SwitchTheme />
+      <hr />
+      <SocialMedia />
     </div>
   )
 }
