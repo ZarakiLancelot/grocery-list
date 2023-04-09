@@ -1,5 +1,10 @@
 import styles from './SwitchTheme.module.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 const SocialMedia = () => {
   const openLink = url => {
     window.open(url, '_blank', 'noopener, noreferrer');
@@ -7,14 +12,14 @@ const SocialMedia = () => {
 
   return (
     <div className={styles.btns}>
-      <button onClick={() => openLink("https://www.linkedin.com/in/edwin-einsen-vasquez-velasquez/")}>
-        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+      <button style={{fontSize:"3em", backgroundColor:"transparent"}} onClick={() => openLink("https://www.linkedin.com/in/edwin-einsen-vasquez-velasquez/")}>
+        <FontAwesomeIcon icon={faLinkedin} />
       </button>
-      <button onClick={() => openLink("https://github.com/ZarakiLancelot/grocery-list.git")}>
-        <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" />
+      <button style={{fontSize:"3em", backgroundColor:"transparent"}} onClick={() => openLink("https://github.com/ZarakiLancelot/grocery-list.git")}>
+        <FontAwesomeIcon icon={faGithub} />
       </button>
-      <button onClick={() => openLink("https://twitter.com/DevChapin")}>
-        <img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter" />
+      <button style={{fontSize:"3em", backgroundColor:"transparent"}} onClick={() => openLink("https://twitter.com/DevChapin")}>
+        <FontAwesomeIcon icon={faTwitter} />
       </button>
       <div>
         <p>Author: Edwin Einsen Vásquez Velásquez</p>
