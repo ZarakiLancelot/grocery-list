@@ -5,10 +5,11 @@ import GroceryFrom from './components/GroceryForm';
 import EditForm from './components/EditForm';
 import ItemList from './components/ItemList';
 import SwitchTheme from './components/SwitchTheme';
+import SocialMedia from './components/SocialMedia';
+import Weather from './components/Weather';
 
 // Custom Hooks
 import useLocalStorage from './hooks/useLocalStorage';
-import SocialMedia from './components/SocialMedia';
 
 function App() {
   const [items, setItems] = useLocalStorage('grocery-list', []);
@@ -51,6 +52,9 @@ function App() {
 
   return (
     <div className="container">
+      <div className="principal">
+        <Weather />
+      </div>
       <header>
         <h1>Grocery List</h1>
       </header>

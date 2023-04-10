@@ -23,7 +23,7 @@ const SocialMedia = () => {
       </button>
       <div>
         <p>Author: Edwin Einsen Vásquez Velásquez</p>
-        <p>Version: 1.0.1</p>
+        <p>Version: 2.1.0</p>
         <p><a href="mailto:einsen.vasquez.velasquez@gmail.com">einsen.vasquez.velasquez@gmail.com</a></p>
       </div>
     </div>

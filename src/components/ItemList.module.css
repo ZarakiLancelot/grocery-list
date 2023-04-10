@@ -1,7 +1,10 @@
 .items {
   display: grid;
+  justify-content: stretch;
   list-style-type: none;
-  gap: 1.5em;
+  gap: 1em;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .item {
@@ -95,7 +98,6 @@
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;

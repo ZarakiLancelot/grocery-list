@@ -1,17 +1,19 @@
-.wrapper {
+aside .wrapper {
   position: fixed;
   bottom: 0;
   --wrapperSize: clamp(4em, 3vmax, 7em);
+  justify-content: end;
   padding: 1em 2em;
   width: 100%;
-  display: grid;
+  display: flex;
   --_size: 1.5rem;
-  place-items: center;
 }
 
 .btns {
   display: flex;
   gap: 1em;
+  justify-content: center;
+  padding-bottom: 1em;
 }
 
 a {
