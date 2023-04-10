@@ -37,8 +37,8 @@
 
 .weather .top .description {
   position: absolute;
-  right: -90%;
-  transform-origin: 0 0;
+  top: 25%;
+  left: 100%;
   transform: rotate(269deg);
 }
 
