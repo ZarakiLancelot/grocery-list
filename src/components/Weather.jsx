@@ -6,7 +6,7 @@ const Weather = () => {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
 
-  const API_KEY = '34976cd487064bd634c1f95dd97a1b81';
+  const API_KEY = import.meta.env.VITE_W_API_KEY
   const UNITS = 'metric';
   const URL_STD = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${UNITS}&appid=${API_KEY}`;
 
