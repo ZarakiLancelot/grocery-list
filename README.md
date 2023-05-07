@@ -17,7 +17,7 @@ edit and delete them, as well as mark them as already in the cart. You can chang
 I know that the bootcamp it's about JavaScript (Vanilla), but I want to use this new knowledge with some that I want to learn next,
 and the rules didn't forbid me.
 
-[![grocery-list](https://scontent.fgua5-1.fna.fbcdn.net/v/t39.30808-6/340624486_212457784736502_3979346759784444175_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=ejXoTmOGc80AX8UWWGw&_nc_ht=scontent.fgua5-1.fna&oh=00_AfDRT3FLkeOma9-g1hfNP5iIP4qt30fuJfbn1HAwWYh69w&oe=643972C6)](https://www.awesomescreenshot.com/video/15954312?key=f0868219b517a8f265fe9bb304a805ec)
+[![grocery-list](https://scontent.faqb1-1.fna.fbcdn.net/v/t39.30808-6/340624486_212457784736502_3979346759784444175_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=n5WMyCbhN4cAX9tE1TG&_nc_ht=scontent.faqb1-1.fna&oh=00_AfBt9w2Mqx6dIC1Sozn8XwdYfq2RTpWYG5C5AdBxne5lSQ&oe=645D0B46)](https://www.awesomescreenshot.com/video/15954312?key=f0868219b517a8f265fe9bb304a805ec)
 
 ## Installation
 
