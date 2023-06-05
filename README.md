@@ -17,7 +17,7 @@ edit and delete them, as well as mark them as already in the cart. You can chang
 I know that the bootcamp it's about JavaScript (Vanilla), but I want to use this new knowledge with some that I want to learn next,
 and the rules didn't forbid me.
 
-[![grocery-list]([https://scontent.faqb1-1.fna.fbcdn.net/v/t39.30808-6/340624486_212457784736502_3979346759784444175_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=n5WMyCbhN4cAX9tE1TG&_nc_ht=scontent.faqb1-1.fna&oh=00_AfBt9w2Mqx6dIC1Sozn8XwdYfq2RTpWYG5C5AdBxne5lSQ&oe=645D0B46)](https://www.awesomescreenshot.com/video/15954312?key=f0868219b517a8f265fe9bb304a805ec](https://scontent.faqb1-1.fna.fbcdn.net/v/t39.30808-6/340624486_212457784736502_3979346759784444175_n.jpg?stp=dst-jpg_p180x540&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=CrGYC9N1aCUAX8Gg_Ss&_nc_ht=scontent.faqb1-1.fna&oh=00_AfCtDVMgT-5bgr1K7xzLK4-1RzTeZf68oMyr_OTh482x0A&oe=64829E06))
+![grocery-list](https://scontent.faqb1-2.fna.fbcdn.net/v/t39.30808-6/351116801_271997221953241_1186662193192730824_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=PwW7JFL4rnQAX9CnCiQ&_nc_ht=scontent.faqb1-2.fna&oh=00_AfDyIK0UzWVDQLrM32SnyaasIT1XUDRhEZYhn9NEfvuDww&oe=6482DC6F)
 
 ## Installation
 
